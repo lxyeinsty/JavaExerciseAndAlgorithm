@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - device_manage@localhost" uuid="4418df42-d53b-4038-9d7a-28672c030f25">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>device_manage.*</schema-pattern>
+      <default-schemas>device_manage.*</default-schemas>
+    </data-source>
+  </component>
+</project>
