@@ -15,29 +15,35 @@ public class Patition {
         }
 
         int index = (int) Math.random() * (end - start) + start;
-        swap(data[index], data[end]);
+        swap(data, index, end);
 
-        int small = index - 1;
+        int small = start - 1;
 
         for (index = start; index < end; index++) {
             if (data[index] < data[end]) {
                 ++ small;
                 if (small != index) {
-                    swap(data[index], data[small]);
+                    swap(data, index, small);
                 }
             }
         }
 
         ++small;
-        swap(data[small], data[end]);
+        swap(data, small, end);
 
         return small;
     }
 
-    public static void swap(int a, int b) {
-        int temp;
-        temp = a;
-        a = b;
-        b = temp;
+    public static void swap(int [] data, int a, int b) {
+        int temp = data[a];
+        data[a] = data[b];
+        data[b] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] data = {1,2};
+        swap(data, 0 , 1);
+        System.out.print(data[0]);
+        System.out.print(data[1]);
     }
 }
