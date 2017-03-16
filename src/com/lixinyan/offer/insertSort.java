@@ -1,4 +1,4 @@
-package com.lixinyan.algorithm;
+package com.lixinyan.offer;
 
 import java.util.Scanner;
 
