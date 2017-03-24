@@ -54,7 +54,7 @@ public class LRUCache1 {
             n.pre.next = n.next;
             n.next.pre = n.pre;
             appendTail(n);
-            return;
+            return; 
         }
         // else {
         if(map.size() == cap) {
