@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Speech">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/com/lixinyan/thirdlib/BDSpeech/Speech.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/java-exercise/com/lixinyan/thirdlib/BDSpeech/Speech.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

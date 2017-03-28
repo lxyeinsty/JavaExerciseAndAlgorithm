@@ -25,7 +25,7 @@ public class MovingCount {
                      + movingCountCore(threshold, rows, cols,row-1,col,visited);
         }
 
-        private boolean checkSum(int threshold, int row, int col) {
+            private boolean checkSum(int threshold, int row, int col) {
             int sum = 0;
             while (row != 0) {
                 sum += row%10;
