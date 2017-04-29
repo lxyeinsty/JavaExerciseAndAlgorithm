@@ -46,5 +46,4 @@ public class MergeSort {
 
         return nums;
     }
-
 }

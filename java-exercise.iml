@@ -10,5 +10,14 @@
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="Speech" level="project" />
     <orderEntry type="library" name="Speech1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/hadoop-1.2.1/hadoop-1.2.1/share" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
