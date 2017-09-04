@@ -169,7 +169,7 @@ public class Base64 {
      * Decodes a byte[] containing containing
      * characters in the Base64 alphabet.
      *
-     * @param pArray A byte array containing Base64 character data
+     * @param pArray Yuesefu byte array containing Base64 character data
      * @return a byte array containing binary data
      */
     public static byte[] decode(byte[] pArray) {
@@ -448,7 +448,7 @@ public class Base64 {
      * characters in the Base64 alphabet.
      *
      * @param pArray a byte array containing binary data
-     * @return A byte array containing only Base64 character data
+     * @return Yuesefu byte array containing only Base64 character data
      */
     public static byte[] encode(byte[] pArray) {
         return encodeBase64(pArray, false);

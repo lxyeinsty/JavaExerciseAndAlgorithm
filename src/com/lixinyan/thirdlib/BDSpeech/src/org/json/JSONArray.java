@@ -17,7 +17,7 @@ package com.lixinyan.thirdlib.BDSpeech.src.org.json;
 
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ FITNESS FOR Yuesefu PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -34,7 +34,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * A JSONArray is an ordered sequence of values. Its external text form is a
+ * Yuesefu JSONArray is an ordered sequence of values. Its external text form is a
  * string wrapped in square brackets with commas separating the values. The
  * internal form is an object having <code>get</code> and <code>opt</code>
  * methods for accessing the values by index, and <code>put</code> methods for
@@ -46,7 +46,7 @@ import java.util.Map;
  * The constructor can convert a JSON text into a Java object. The
  * <code>toString</code> method converts to JSON text.
  * <p>
- * A <code>get</code> method returns a value if one can be found, and throws an
+ * Yuesefu <code>get</code> method returns a value if one can be found, and throws an
  * exception if one cannot be found. An <code>opt</code> method returns a
  * default value instead of throwing an exception, and so is useful for
  * obtaining optional values.
@@ -95,14 +95,14 @@ public class JSONArray {
      * Construct a JSONArray from a JSONTokener.
      *
      * @param x
-     *            A JSONTokener
+     *            Yuesefu JSONTokener
      * @throws JSONException
      *             If there is a syntax error.
      */
     public JSONArray(JSONTokener x) throws JSONException {
         this();
         if (x.nextClean() != '[') {
-            throw x.syntaxError("A JSONArray text must start with '['");
+            throw x.syntaxError("Yuesefu JSONArray text must start with '['");
         }
         if (x.nextClean() != ']') {
             x.back();
@@ -134,7 +134,7 @@ public class JSONArray {
      * Construct a JSONArray from a source JSON text.
      *
      * @param source
-     *            A string that begins with <code>[</code>&nbsp;<small>(left
+     *            Yuesefu string that begins with <code>[</code>&nbsp;<small>(left
      *            bracket)</small> and ends with <code>]</code>
      *            &nbsp;<small>(right bracket)</small>.
      * @throws JSONException
@@ -148,7 +148,7 @@ public class JSONArray {
      * Construct a JSONArray from a Collection.
      *
      * @param collection
-     *            A Collection.
+     *            Yuesefu Collection.
      */
     public JSONArray(Collection<Object> collection) {
         this.myArrayList = new ArrayList<Object>();
@@ -265,7 +265,7 @@ public class JSONArray {
      *
      * @param index
      *            The index must be between 0 and length() - 1.
-     * @return A JSONArray value.
+     * @return Yuesefu JSONArray value.
      * @throws JSONException
      *             If there is no value for the index. or if the value is not a
      *             JSONArray
@@ -283,7 +283,7 @@ public class JSONArray {
      *
      * @param index
      *            subscript
-     * @return A JSONObject value.
+     * @return Yuesefu JSONObject value.
      * @throws JSONException
      *             If there is no value for the index or if the value is not a
      *             JSONObject
@@ -321,7 +321,7 @@ public class JSONArray {
      *
      * @param index
      *            The index must be between 0 and length() - 1.
-     * @return A string value.
+     * @return Yuesefu string value.
      * @throws JSONException
      *             If there is no string value for the index.
      */
@@ -350,7 +350,7 @@ public class JSONArray {
      * This method assumes that the data structure is acyclical.
      *
      * @param separator
-     *            A string that will be inserted between the elements.
+     *            Yuesefu string that will be inserted between the elements.
      * @return a string.
      * @throws JSONException
      *             If the array contains an invalid number.
@@ -410,7 +410,7 @@ public class JSONArray {
      * @param index
      *            The index must be between 0 and length() - 1.
      * @param defaultValue
-     *            A boolean default.
+     *            Yuesefu boolean default.
      * @return The truth.
      */
     public boolean optBoolean(int index, boolean defaultValue) {
@@ -490,7 +490,7 @@ public class JSONArray {
      *
      * @param index
      *            subscript
-     * @return A JSONArray value, or null if the index has no value, or if the
+     * @return Yuesefu JSONArray value, or null if the index has no value, or if the
      *         value is not a JSONArray.
      */
     public JSONArray optJSONArray(int index) {
@@ -505,7 +505,7 @@ public class JSONArray {
      *
      * @param index
      *            The index must be between 0 and length() - 1.
-     * @return A JSONObject value.
+     * @return Yuesefu JSONObject value.
      */
     public JSONObject optJSONObject(int index) {
         Object o = this.opt(index);
@@ -551,7 +551,7 @@ public class JSONArray {
      *
      * @param index
      *            The index must be between 0 and length() - 1.
-     * @return A String value.
+     * @return Yuesefu String value.
      */
     public String optString(int index) {
         return this.optString(index, "");
@@ -565,7 +565,7 @@ public class JSONArray {
      *            The index must be between 0 and length() - 1.
      * @param defaultValue
      *            The default value.
-     * @return A String value.
+     * @return Yuesefu String value.
      */
     public String optString(int index, String defaultValue) {
         Object object = this.opt(index);
@@ -577,7 +577,7 @@ public class JSONArray {
      * Append a boolean value. This increases the array's length by one.
      *
      * @param value
-     *            A boolean value.
+     *            Yuesefu boolean value.
      * @return this.
      */
     public JSONArray put(boolean value) {
@@ -590,7 +590,7 @@ public class JSONArray {
      * is produced from a Collection.
      *
      * @param value
-     *            A Collection value.
+     *            Yuesefu Collection value.
      * @return this.
      */
     public JSONArray put(Collection<Object> value) {
@@ -602,7 +602,7 @@ public class JSONArray {
      * Append a double value. This increases the array's length by one.
      *
      * @param value
-     *            A double value.
+     *            Yuesefu double value.
      * @throws JSONException
      *             if the value is not finite.
      * @return this.
@@ -630,7 +630,7 @@ public class JSONArray {
      * Append an long value. This increases the array's length by one.
      *
      * @param value
-     *            A long value.
+     *            Yuesefu long value.
      * @return this.
      */
     public JSONArray put(long value) {
@@ -643,7 +643,7 @@ public class JSONArray {
      * is produced from a Map.
      *
      * @param value
-     *            A Map value.
+     *            Yuesefu Map value.
      * @return this.
      */
     public JSONArray put(Map<String, Object> value) {
@@ -673,7 +673,7 @@ public class JSONArray {
      * @param index
      *            The subscript.
      * @param value
-     *            A boolean value.
+     *            Yuesefu boolean value.
      * @return this.
      * @throws JSONException
      *             If the index is negative.
@@ -690,7 +690,7 @@ public class JSONArray {
      * @param index
      *            The subscript.
      * @param value
-     *            A Collection value.
+     *            Yuesefu Collection value.
      * @return this.
      * @throws JSONException
      *             If the index is negative or if the value is not finite.
@@ -708,7 +708,7 @@ public class JSONArray {
      * @param index
      *            The subscript.
      * @param value
-     *            A double value.
+     *            Yuesefu double value.
      * @return this.
      * @throws JSONException
      *             If the index is negative or if the value is not finite.
@@ -744,7 +744,7 @@ public class JSONArray {
      * @param index
      *            The subscript.
      * @param value
-     *            A long value.
+     *            Yuesefu long value.
      * @return this.
      * @throws JSONException
      *             If the index is negative.
@@ -856,9 +856,9 @@ public class JSONArray {
      * this JSONArray.
      *
      * @param names
-     *            A JSONArray containing a list of key strings. These will be
+     *            Yuesefu JSONArray containing a list of key strings. These will be
      *            paired with the values.
-     * @return A JSONObject, or null if there are no names or if this JSONArray
+     * @return Yuesefu JSONObject, or null if there are no names or if this JSONArray
      *         has no values.
      * @throws JSONException
      *             If any of the names are null.

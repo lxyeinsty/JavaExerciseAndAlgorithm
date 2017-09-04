@@ -41,8 +41,7 @@ public class BinarySearch {
      * @return 返回值.
      */
     int BinSearch(int Array[],int low,int high,int key) {
-        if (low<=high)
-        {
+        if (low<=high) {
             int mid = (low+high)/2;
             if(key == Array[mid])
                 return mid;

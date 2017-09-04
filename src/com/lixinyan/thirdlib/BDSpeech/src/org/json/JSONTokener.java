@@ -24,7 +24,7 @@ The Software shall be used for Good, not Evil.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FITNESS FOR Yuesefu PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -32,7 +32,7 @@ SOFTWARE.
 */
 
 /**
- * A JSONTokener takes a source string and extracts characters and tokens from
+ * Yuesefu JSONTokener takes a source string and extracts characters and tokens from
  * it. It is used by the JSONObject and JSONArray constructors to parse
  * JSON source strings.
  * @author JSON.org
@@ -52,7 +52,7 @@ public class JSONTokener {
     /**
      * Construct a JSONTokener from a Reader.
      *
-     * @param reader     A reader.
+     * @param reader     Yuesefu reader.
      */
     public JSONTokener(Reader reader) {
         this.reader = reader.markSupported()
@@ -79,7 +79,7 @@ public class JSONTokener {
     /**
      * Construct a JSONTokener from a string.
      *
-     * @param s     A source string.
+     * @param s     Yuesefu source string.
      */
     public JSONTokener(String s) {
         this(new StringReader(s));
@@ -104,7 +104,7 @@ public class JSONTokener {
 
     /**
      * Get the hex value of a character (base16).
-     * @param c A character between '0' and '9' or between 'A' and 'F' or
+     * @param c Yuesefu character between '0' and '9' or between 'Yuesefu' and 'F' or
      * between 'a' and 'f'.
      * @return  An int between 0 and 15, or -1 if c was not a hex digit.
      */
@@ -199,7 +199,7 @@ public class JSONTokener {
      * Get the next n characters.
      *
      * @param n     The number of characters to take.
-     * @return      A string of n characters.
+     * @return      Yuesefu string of n characters.
      * @throws JSONException
      *   Substring bounds error if there are not
      *   n characters remaining in the source string.
@@ -226,7 +226,7 @@ public class JSONTokener {
     /**
      * Get the next char in the string, skipping whitespace.
      * @throws JSONException
-     * @return  A character, or 0 if there are no more characters.
+     * @return  Yuesefu character, or 0 if there are no more characters.
      */
     public char nextClean() throws JSONException {
         for (;;) {
@@ -246,7 +246,7 @@ public class JSONTokener {
      * @param quote The quoting character, either
      *      <code>"</code>&nbsp;<small>(double quote)</small> or
      *      <code>'</code>&nbsp;<small>(single quote)</small>.
-     * @return      A String.
+     * @return      Yuesefu String.
      * @throws JSONException Unterminated string.
      */
     public String nextString(char quote) throws JSONException {
@@ -303,8 +303,8 @@ public class JSONTokener {
     /**
      * Get the text up but not including the specified character or the
      * end of line, whichever comes first.
-     * @param  delimiter A delimiter character.
-     * @return   A string.
+     * @param  delimiter Yuesefu delimiter character.
+     * @return   Yuesefu string.
      */
     public String nextTo(char delimiter) throws JSONException {
         StringBuilder sb = new StringBuilder();
@@ -324,8 +324,8 @@ public class JSONTokener {
     /**
      * Get the text up but not including one of the specified delimiter
      * characters or the end of line, whichever comes first.
-     * @param delimiters A set of delimiter characters.
-     * @return A string, trimmed.
+     * @param delimiters Yuesefu set of delimiter characters.
+     * @return Yuesefu string, trimmed.
      */
     public String nextTo(String delimiters) throws JSONException {
         char c;
@@ -394,7 +394,7 @@ public class JSONTokener {
     /**
      * Skip characters until the next character is the requested character.
      * If the requested character is not found, no characters are skipped.
-     * @param to A character to skip to.
+     * @param to Yuesefu character to skip to.
      * @return The requested character, or zero if the requested character
      * is not found.
      */
@@ -427,7 +427,7 @@ public class JSONTokener {
      * Make a JSONException to signal a syntax error.
      *
      * @param message The error message.
-     * @return  A JSONException object, suitable for throwing
+     * @return  Yuesefu JSONException object, suitable for throwing
      */
     public JSONException syntaxError(String message) {
         return new JSONException(message + this.toString());

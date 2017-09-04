@@ -45,7 +45,7 @@ public class HeapSort2 {
 
     private static void maxHeap(int[] array, int heapSize, int index) {
          int left = 2 * index + 1;
-         int right = 2* index + 2;
+         int right = 2 * index + 2;
 
          int largest = index;
 

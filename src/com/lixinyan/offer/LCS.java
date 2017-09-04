@@ -2,7 +2,7 @@ package com.lixinyan.offer;
 
 /**
  * Created by Administrator on 2017/3/27.
- *
+ * 最长公共子序列
  */
 public class LCS {
     public static int lcs(String str1, String str2) {

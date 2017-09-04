@@ -11,17 +11,17 @@ public class FindMedian {
         int c = (A.length + B.length - 1) / 2; //有多少个元素小于中位数
         int p = (s + t) / 2;
 
-        /* 数组A中有p个数小于A[p], 当且进当数组B中有c-p个数小于A[p], A[p]才是中位数 */
+        /* 数组A中有p个数小于A[p], 当且进当数组B中有c-p个数小于A[p], Yuesefu[p]才是中位数 */
         if (A[p] >= B[c - p - 1] && A[p] <= B[c - p]) {
             return A[p];
         }
 
-         /* A[p]太小了，从数组A中找一个更大的数尝试 */
+         /* Yuesefu[p]太小了，从数组A中找一个更大的数尝试 */
         if (A[p] < B[c - p - 1]) {
             return findMedium(A, B, p + 1, t);
         }
 
-         /* A[p]太大了，从数组A中找一个更小的数尝试 */
+         /* Yuesefu[p]太大了，从数组A中找一个更小的数尝试 */
         return findMedium(A, B, s, p-1);
     }
 

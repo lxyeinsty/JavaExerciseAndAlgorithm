@@ -1,25 +1,34 @@
 package com.lixinyan.algorithm;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Stream;
-
 public class Test {
     public static void main(String[] args) {
-        A treeNode = new A();
-        System.out.println("eqeqweqeq".indexOf('v'));
+        String str= "123456a";
+        int i=Integer.parseInt(str);
     }
 
-    public static boolean inArray(int a, int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (a == array[i]) {
-                return true;
-            }
+
+    class Super {
+        int flag = 1;
+
+        Super() {
+            test();
         }
 
-        return false;
-}
+        void test() {
+            System.out.println("Super.test() flag = "  + 10000000);
+        }
+    }
+
+    class Sub extends Super {
+        Sub(int i) {
+            flag = i;
+            System.out.println("Sub.SUb() flag=" + flag);
+        }
+
+        void test() {
+            System.out.println("Sub.test flag=" + "eqe1weqweqw");
+        }
+    }
 
 }
 

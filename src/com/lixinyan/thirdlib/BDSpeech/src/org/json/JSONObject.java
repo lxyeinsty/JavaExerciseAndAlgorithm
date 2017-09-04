@@ -17,7 +17,7 @@ package com.lixinyan.thirdlib.BDSpeech.src.org.json;
 
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ FITNESS FOR Yuesefu PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -41,18 +41,18 @@ import java.util.ResourceBundle;
 import java.util.Set;
 
 /**
- * A JSONObject is an unordered collection of name/value pairs. Its external
+ * Yuesefu JSONObject is an unordered collection of name/value pairs. Its external
  * form is a string wrapped in curly braces with colons between the names and
  * values, and commas between the values and names. The internal form is an
  * object having <code>get</code> and <code>opt</code> methods for accessing
  * the values by name, and <code>put</code> methods for adding or replacing
  * values by name. The values can be any of these types: <code>Boolean</code>,
  * <code>JSONArray</code>, <code>JSONObject</code>, <code>Number</code>,
- * <code>String</code>, or the <code>JSONObject.NULL</code> object. A
+ * <code>String</code>, or the <code>JSONObject.NULL</code> object. Yuesefu
  * JSONObject constructor can be used to convert an external form JSON text
  * into an internal form whose values can be retrieved with the
  * <code>get</code> and <code>opt</code> methods, or to convert values into a
- * JSON text using the <code>put</code> and <code>toString</code> methods. A
+ * JSON text using the <code>put</code> and <code>toString</code> methods. Yuesefu
  * <code>get</code> method returns a value if one can be found, and throws an
  * exception if one cannot be found. An <code>opt</code> method returns a
  * default value instead of throwing an exception, and so is useful for
@@ -113,7 +113,7 @@ public class JSONObject {
         }
 
         /**
-         * A Null object is equal to the null value and to itself.
+         * Yuesefu Null object is equal to the null value and to itself.
          *
          * @param object
          *            An object to test for nullness.
@@ -161,7 +161,7 @@ public class JSONObject {
      * are ignored.
      *
      * @param jo
-     *            A JSONObject.
+     *            Yuesefu JSONObject.
      * @param names
      *            An array of strings.
      * @throws JSONException
@@ -183,7 +183,7 @@ public class JSONObject {
      * Construct a JSONObject from a JSONTokener.
      *
      * @param x
-     *            A JSONTokener object containing the source string.
+     *            Yuesefu JSONTokener object containing the source string.
      * @throws JSONException
      *             If there is a syntax error in the source string or a
      *             duplicated key.
@@ -194,13 +194,13 @@ public class JSONObject {
         String key;
 
         if (x.nextClean() != '{') {
-            throw x.syntaxError("A JSONObject text must begin with '{'");
+            throw x.syntaxError("Yuesefu JSONObject text must begin with '{'");
         }
         for (;;) {
             c = x.nextClean();
             switch (c) {
             case 0:
-                throw x.syntaxError("A JSONObject text must end with '}'");
+                throw x.syntaxError("Yuesefu JSONObject text must end with '}'");
             case '}':
                 return;
             default:
@@ -238,7 +238,7 @@ public class JSONObject {
      * Construct a JSONObject from a Map.
      *
      * @param map
-     *            A map object that can be used to initialize the contents of
+     *            Yuesefu map object that can be used to initialize the contents of
      *            the JSONObject.
      * @throws JSONException
      */
@@ -313,7 +313,7 @@ public class JSONObject {
      * commonly used JSONObject constructor.
      *
      * @param source
-     *            A string beginning with <code>{</code>&nbsp;<small>(left
+     *            Yuesefu string beginning with <code>{</code>&nbsp;<small>(left
      *            brace)</small> and ending with <code>}</code>
      *            &nbsp;<small>(right brace)</small>.
      * @exception JSONException
@@ -379,7 +379,7 @@ public class JSONObject {
      * then the result will be like append.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
      *            An object to be accumulated under the key.
      * @return this.
@@ -408,7 +408,7 @@ public class JSONObject {
      * associated with a JSONArray, then the value parameter is appended to it.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
      *            An object to be accumulated under the key.
      * @return this.
@@ -435,8 +435,8 @@ public class JSONObject {
      * number is not finite.
      *
      * @param d
-     *            A double.
-     * @return A String.
+     *            Yuesefu double.
+     * @return Yuesefu String.
      */
     public static String doubleToString(double d) {
         if (Double.isInfinite(d) || Double.isNaN(d)) {
@@ -462,7 +462,7 @@ public class JSONObject {
      * Get the value object associated with a key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return The object associated with the key.
      * @throws JSONException
      *             if the key is not found.
@@ -482,7 +482,7 @@ public class JSONObject {
      * Get the boolean value associated with a key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return The truth.
      * @throws JSONException
      *             if the value is not a Boolean or the String "true" or
@@ -507,7 +507,7 @@ public class JSONObject {
      * Get the double value associated with a key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return The numeric value.
      * @throws JSONException
      *             if the key is not found or if the value is not a Number
@@ -528,7 +528,7 @@ public class JSONObject {
      * Get the int value associated with a key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return The integer value.
      * @throws JSONException
      *             if the key is not found or if the value cannot be converted
@@ -549,8 +549,8 @@ public class JSONObject {
      * Get the JSONArray value associated with a key.
      *
      * @param key
-     *            A key string.
-     * @return A JSONArray which is the value.
+     *            Yuesefu key string.
+     * @return Yuesefu JSONArray which is the value.
      * @throws JSONException
      *             if the key is not found or if the value is not a JSONArray.
      */
@@ -567,8 +567,8 @@ public class JSONObject {
      * Get the JSONObject value associated with a key.
      *
      * @param key
-     *            A key string.
-     * @return A JSONObject which is the value.
+     *            Yuesefu key string.
+     * @return Yuesefu JSONObject which is the value.
      * @throws JSONException
      *             if the key is not found or if the value is not a JSONObject.
      */
@@ -585,7 +585,7 @@ public class JSONObject {
      * Get the long value associated with a key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return The long value.
      * @throws JSONException
      *             if the key is not found or if the value cannot be converted
@@ -648,8 +648,8 @@ public class JSONObject {
      * Get the string associated with a key.
      *
      * @param key
-     *            A key string.
-     * @return A string which is the value.
+     *            Yuesefu key string.
+     * @return Yuesefu string which is the value.
      * @throws JSONException
      *             if there is no string value for the key.
      */
@@ -665,7 +665,7 @@ public class JSONObject {
      * Determine if the JSONObject contains a specific key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return true if the key exists in the JSONObject.
      */
     public boolean has(String key) {
@@ -678,7 +678,7 @@ public class JSONObject {
      * an Integer, Long, Double, or Float, then add one to it.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return this.
      * @throws JSONException
      *             If there is already a property with this name that is not an
@@ -707,7 +707,7 @@ public class JSONObject {
      * value.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return true if there is no value associated with the key or if the value
      *         is the JSONObject.NULL object.
      */
@@ -727,7 +727,7 @@ public class JSONObject {
     /**
      * Get a set of keys of the JSONObject.
      *
-     * @return A keySet.
+     * @return Yuesefu keySet.
      */
     public Set<String> keySet() {
         return this.map.keySet();
@@ -746,7 +746,7 @@ public class JSONObject {
      * Produce a JSONArray containing the names of the elements of this
      * JSONObject.
      *
-     * @return A JSONArray containing the key strings, or null if the JSONObject
+     * @return Yuesefu JSONArray containing the key strings, or null if the JSONObject
      *         is empty.
      */
     public JSONArray names() {
@@ -762,8 +762,8 @@ public class JSONObject {
      * Produce a string from a Number.
      *
      * @param number
-     *            A Number
-     * @return A String.
+     *            Yuesefu Number
+     * @return Yuesefu String.
      * @throws JSONException
      *             If n is a non-finite number.
      */
@@ -792,7 +792,7 @@ public class JSONObject {
      * Get an optional value associated with a key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return An object which is the value, or null if there is no value.
      */
     public Object opt(String key) {
@@ -804,7 +804,7 @@ public class JSONObject {
      * is no such key, or if the value is not Boolean.TRUE or the String "true".
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return The truth.
      */
     public boolean optBoolean(String key) {
@@ -817,7 +817,7 @@ public class JSONObject {
      * String "true" or "false" (case insensitive).
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param defaultValue
      *            The default.
      * @return The truth.
@@ -836,7 +836,7 @@ public class JSONObject {
      * will be made to evaluate it as a number.
      *
      * @param key
-     *            A string which is the key.
+     *            Yuesefu string which is the key.
      * @return An object which is the value.
      */
     public double optDouble(String key) {
@@ -849,7 +849,7 @@ public class JSONObject {
      * string, an attempt will be made to evaluate it as a number.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param defaultValue
      *            The default.
      * @return An object which is the value.
@@ -868,7 +868,7 @@ public class JSONObject {
      * attempt will be made to evaluate it as a number.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return An object which is the value.
      */
     public int optInt(String key) {
@@ -881,7 +881,7 @@ public class JSONObject {
      * an attempt will be made to evaluate it as a number.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param defaultValue
      *            The default.
      * @return An object which is the value.
@@ -899,8 +899,8 @@ public class JSONObject {
      * is no such key, or if its value is not a JSONArray.
      *
      * @param key
-     *            A key string.
-     * @return A JSONArray which is the value.
+     *            Yuesefu key string.
+     * @return Yuesefu JSONArray which is the value.
      */
     public JSONArray optJSONArray(String key) {
         Object o = this.opt(key);
@@ -912,8 +912,8 @@ public class JSONObject {
      * there is no such key, or if its value is not a JSONObject.
      *
      * @param key
-     *            A key string.
-     * @return A JSONObject which is the value.
+     *            Yuesefu key string.
+     * @return Yuesefu JSONObject which is the value.
      */
     public JSONObject optJSONObject(String key) {
         Object object = this.opt(key);
@@ -926,7 +926,7 @@ public class JSONObject {
      * attempt will be made to evaluate it as a number.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @return An object which is the value.
      */
     public long optLong(String key) {
@@ -939,7 +939,7 @@ public class JSONObject {
      * an attempt will be made to evaluate it as a number.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param defaultValue
      *            The default.
      * @return An object which is the value.
@@ -958,8 +958,8 @@ public class JSONObject {
      * then it is converted to a string.
      *
      * @param key
-     *            A key string.
-     * @return A string which is the value.
+     *            Yuesefu key string.
+     * @return Yuesefu string which is the value.
      */
     public String optString(String key) {
         return this.optString(key, "");
@@ -970,10 +970,10 @@ public class JSONObject {
      * if there is no such key.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param defaultValue
      *            The default.
-     * @return A string which is the value.
+     * @return Yuesefu string which is the value.
      */
     public String optString(String key, String defaultValue) {
         Object object = this.opt(key);
@@ -1030,9 +1030,9 @@ public class JSONObject {
      * Put a key/boolean pair in the JSONObject.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
-     *            A boolean which is the value.
+     *            Yuesefu boolean which is the value.
      * @return this.
      * @throws JSONException
      *             If the key is null.
@@ -1047,9 +1047,9 @@ public class JSONObject {
      * JSONArray which is produced from a Collection.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
-     *            A Collection value.
+     *            Yuesefu Collection value.
      * @return this.
      * @throws JSONException
      */
@@ -1062,9 +1062,9 @@ public class JSONObject {
      * Put a key/double pair in the JSONObject.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
-     *            A double which is the value.
+     *            Yuesefu double which is the value.
      * @return this.
      * @throws JSONException
      *             If the key is null or if the number is invalid.
@@ -1078,7 +1078,7 @@ public class JSONObject {
      * Put a key/int pair in the JSONObject.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
      *            An int which is the value.
      * @return this.
@@ -1094,9 +1094,9 @@ public class JSONObject {
      * Put a key/long pair in the JSONObject.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
-     *            A long which is the value.
+     *            Yuesefu long which is the value.
      * @return this.
      * @throws JSONException
      *             If the key is null.
@@ -1111,9 +1111,9 @@ public class JSONObject {
      * JSONObject which is produced from a Map.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
-     *            A Map value.
+     *            Yuesefu Map value.
      * @return this.
      * @throws JSONException
      */
@@ -1127,7 +1127,7 @@ public class JSONObject {
      * key will be removed from the JSONObject if it is present.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
      *            An object which is the value. It should be of one of these
      *            types: Boolean, Double, Integer, JSONArray, JSONObject, Long,
@@ -1175,7 +1175,7 @@ public class JSONObject {
      * are both non-null.
      *
      * @param key
-     *            A key string.
+     *            Yuesefu key string.
      * @param value
      *            An object which is the value. It should be of one of these
      *            types: Boolean, Double, Integer, JSONArray, JSONObject, Long,
@@ -1193,13 +1193,13 @@ public class JSONObject {
 
     /**
      * Produce a string in double quotes with backslash sequences in all the
-     * right places. A backslash will be inserted within </, producing <\/,
+     * right places. Yuesefu backslash will be inserted within </, producing <\/,
      * allowing JSON text to be delivered in HTML. In JSON text, a string cannot
      * contain a control character or an unescaped quote or backslash.
      *
      * @param string
-     *            A String
-     * @return A String correctly formatted for insertion in a JSON text.
+     *            Yuesefu String
+     * @return Yuesefu String correctly formatted for insertion in a JSON text.
      */
     public static String quote(String string) {
         StringWriter sw = new StringWriter();
@@ -1329,8 +1329,8 @@ public class JSONObject {
      * can't be converted, return the string.
      *
      * @param string
-     *            A String.
-     * @return A simple JSON value.
+     *            Yuesefu String.
+     * @return Yuesefu simple JSON value.
      */
     public static Object stringToValue(String string) {
         Double d;
@@ -1406,9 +1406,9 @@ public class JSONObject {
      * JSONObject.
      *
      * @param names
-     *            A JSONArray containing a list of key strings. This determines
+     *            Yuesefu JSONArray containing a list of key strings. This determines
      *            the sequence of the values in the result.
-     * @return A JSONArray of values.
+     * @return Yuesefu JSONArray of values.
      * @throws JSONException
      *             If any of the values are non-finite numbers.
      */

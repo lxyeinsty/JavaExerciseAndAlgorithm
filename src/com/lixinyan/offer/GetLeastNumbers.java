@@ -68,9 +68,6 @@ public class GetLeastNumbers {
         arr[j] = temp;
     }
 
-
-
-
     //新建大顶堆
     public void buildMaxHeap(int[] arr,int lastIndex){
         for(int i = (lastIndex-1)/2;i>=0;i--){
