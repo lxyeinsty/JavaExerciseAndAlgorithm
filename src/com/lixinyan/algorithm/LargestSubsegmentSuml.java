@@ -1,5 +1,6 @@
 package com.lixinyan.algorithm;
 
+import java.util.List;
 import java.util.Scanner;
 
 /**

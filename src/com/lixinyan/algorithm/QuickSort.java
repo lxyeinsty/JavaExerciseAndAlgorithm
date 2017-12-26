@@ -7,8 +7,8 @@ package com.lixinyan.algorithm;
 public class QuickSort {
 
     public static void main (String[] args)  {
-        int[] array = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3 };
-
+        int[] array = {25,15,27,99,18,35,14,66};
+        final int a;
         System.out.println("Before Sort");
         ArrayUtils.printArray(array);
 

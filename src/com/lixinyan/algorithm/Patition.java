@@ -1,6 +1,7 @@
 package com.lixinyan.algorithm;
 
 import java.security.InvalidAlgorithmParameterException;
+import java.util.Objects;
 
 /**
  * Created by Administrator on 2016/11/28.
@@ -38,6 +39,7 @@ public class Patition {
         int temp = data[a];
         data[a] = data[b];
         data[b] = temp;
+        Objects.equals(1,2);
     }
 
     public static void main(String[] args) {
